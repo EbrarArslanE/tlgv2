@@ -63,3 +63,62 @@
 .card button:hover {
   background-color: #33334a;
 }
+.card-long {
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  min-height: 850px; /* Uzunluk burada */
+  margin: 40px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.card-long:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* .card-long img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+} */
+
+.card-long h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.card-long p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+.card-long button {
+  background-color: #1C1C2E;
+  color: #D9FF3E;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  align-self: flex-end;
+}
+
+.card-long button:hover {
+  background-color: #33334a;
+}
