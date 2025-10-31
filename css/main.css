@@ -813,7 +813,7 @@ hr {
 /*Start Header*/
 header {
   height: calc(100vh - 22px);
-  background-image: url("/assets/images/Cover-1.jpg");
+  background-image: url("/assets/images/header.jpg");
   background-size: cover;
   /* Görsel ekranı kaplasın */
   background-repeat: no-repeat;
