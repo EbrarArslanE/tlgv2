@@ -797,10 +797,6 @@ footer .newsletter i,
   }
 }
 
-/*End Loader*/
-
-/*Start Home Page*/
-
 
 hr {
   border: none;
@@ -810,18 +806,13 @@ hr {
   border-radius: 2px;
 }
 
-/*Start Header*/
 header {
   height: calc(100vh - 22px);
   background-image: url("/assets/images/header.jpg");
   background-size: cover;
-  /* Görsel ekranı kaplasın */
   background-repeat: no-repeat;
-  /* Tekrarlanmasın */
   background-position: center;
-  /* Ortalansın */
   background-attachment: fixed;
-  /* Sabit kalsın (scroll ile kaymasın) */
   padding: 20px 70px;
 }
 
@@ -1034,18 +1025,12 @@ header .arrow-down {
   margin-left: 20px;
 }
 
-/*End About-Us*/
-
-/*Start Recipes*/
 .recipes .image {
   height: 350px;
   background: url("/assets/images/banner.png") fixed center;
   background-size: cover;
 }
 
-/*End Recipes*/
-
-/*Start Menu*/
 .menu {
   padding: 60px;
 }
@@ -1133,18 +1118,12 @@ header .arrow-down {
   color: #9a9998;
 }
 
-/*End Menu*/
-
-/*Start fixed-image*/
 .fixed-image {
   background: url("/assets/images/banner2.jpg") fixed center;
   background-size: cover;
   height: 400px;
 }
 
-/*End fixed-image*/
-
-/*Start Footer*/
 footer {
   background-color: #121212;
   padding: 60px 20px;
@@ -1245,12 +1224,6 @@ footer .newsletter i {
 .copyright .CTA li a {
   color: #919191;
 }
-
-/*End Footer*/
-
-/*End Home Page*/
-
-/*Start Contact Page*/
 .contact-header {
   background-image: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988526/contact-food.jpg");
   height: 40vh;
@@ -1322,9 +1295,6 @@ footer .newsletter i {
   font-size: 12px;
 }
 
-/*End Contact Page*/
-
-/*Start Home Page Responsive*/
 
 @media (max-width: 1200px) {
 
@@ -1501,5 +1471,3 @@ footer .newsletter i {
     padding: 60px 0 60px 20px;
   }
 }
-
-/*End Home Page Responsive*/
