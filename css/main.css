@@ -872,7 +872,7 @@ header nav .toggle span:not(:last-of-type) {
 }
 
 header nav .logo {
-  flex-basis: 56%;
+  flex-basis: 40%;
   padding-left: 50px;
 }
 
@@ -1127,7 +1127,8 @@ header .arrow-down {
 }
 
 footer {
-  background-color: #121212;
+  /* background-color: #121212; */
+  background-image: linear-gradient(to top, rgb(30, 144, 255) 20%, rgb(70, 130, 180) 80%);
   padding: 60px 20px;
 }
 

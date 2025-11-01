@@ -13,10 +13,12 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Inter:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/animation.css">
 </head>
 
 <body class="stop-scroll">
@@ -52,21 +54,24 @@
               </ul>
           </div>
       </nav>
-      <div class="text">
-          <h1>TLG Bilgisayar</h1>
-          <div class="arrow">
-              <span class="left"></span>
-              <i class="fas fa-asterisk"></i>
-              <span class="right"></span>
+        <div class="waveWrapper waveAnimation">
+          <div class="waveWrapperInner bgTop">
+            <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
           </div>
-          <span>Teknolojiyi Şekillendiren Güç</span>
-      </div>
-      <svg class="svg-down" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve"><path fill="currentColor" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path></svg>
-      <div class="arrow-down">
-      </div>
+          <div class="waveWrapperInner bgMiddle">
+            <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+          </div>
+          <div class="d-flex flex-col gap-2 items-center justify-center">
+            <span>TLG Bilgisayar</span>
+            <span>Teknolojiyi şekillendiren güç</span>
+          </div>
+          <div class="waveWrapperInner bgBottom">
+            <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+          </div>
+        </div>
   </header>
 
-  <div class="about-us">
+  <div class="about-us" id="about">
     <div class="card card-lg">
       <div><i class="fas fa-asterisk"></i></div>
         <h3>Biz kimiz?</h3>
@@ -81,7 +86,7 @@
     </div>
   </div>
 
-  <div class="recipes">
+  <div class="recipes" id="services">
       <div class="image"></div>
       <div class="text">
           <h2>Ne Yapıyoruz?</h2>
@@ -161,7 +166,7 @@
         </div>
     </div>
 
-  <div class="fixed-image">
+  <div class="fixed-image" id="contact">
       <div class="text">
           <h2>Hakkımızda</h2>
       </div>
@@ -196,6 +201,7 @@
     </div>
 
   <footer>
+
       <div class="text">
           <h2>ABOUT ROSA</h2>
           <div><i class="fas fa-asterisk"></i></div>
@@ -237,7 +243,4 @@
   </div>
 
   <script src="js/main.js"></script>
-  <script src="js/main.min.js"></script>
-</body>
-
-</html>
+  <script src="js/animations.js"></script>
