@@ -123,3 +123,20 @@
 .card-long button:hover {
   background-color: #33334a;
 }
+.card-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #D9FF3E; /* Accent renk ile uyumlu */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-photo:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+

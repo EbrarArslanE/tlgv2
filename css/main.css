@@ -27,7 +27,7 @@ img {
 }
 
 h2 {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Lora', serif;
   font-size: 100px;
   font-weight: 500;
   margin: 0 0 -55px;
@@ -1002,7 +1002,7 @@ header .arrow-down {
 .about-us .text,
 .reservation .text {
   flex: 50%;
-  padding: 40px 52px 0 0;
+  /* padding: 40px 52px 0 0; */
 }
 
 .about-us .text h3,
@@ -1033,6 +1033,8 @@ header .arrow-down {
 
 .menu {
   padding: 60px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .menu .box-model {
