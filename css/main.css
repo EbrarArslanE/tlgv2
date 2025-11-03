@@ -1125,6 +1125,10 @@ header .arrow-down {
 
 .fixed-image {
   background: url("/assets/images/banner2.jpg") fixed center;
+  /* background: url("/assets/images/unnamed.jpg") fixed center; */
+  /* background-image: url("/assets/images/logo-white.png") fixed center; */
+  /* background: #222831; */
+  /* background: radial-gradient(circle,rgba(34, 40, 49, 1) 0%, rgba(57, 62, 70, 1) 50%, rgba(57, 62, 70, 1) 100%); */
   background-size: cover;
   height: 400px;
 }
