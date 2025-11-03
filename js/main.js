@@ -99,7 +99,7 @@ window.onscroll = function() {
     }
 
     // home page JS
-    if (pageTitle.text === "ROSA- Restaurant") {
+    if (pageTitle.text === "TLG Bilgisayar - Teknolojiyi şekillendiren güç") {
         //change dots background color
         if (window.pageYOffset < headerSection.offsetHeight * 0.5) {
             dots.forEach(dot => dot.classList.remove("black"));
