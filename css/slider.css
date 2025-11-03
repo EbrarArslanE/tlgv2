@@ -52,6 +52,7 @@
   background: #1C1C2E;
 }
 
+
 /* Tablet ve daha küçük ekranlar için */
 @media (max-width: 900px) {
   .slider-item {
