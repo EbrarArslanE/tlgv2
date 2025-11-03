@@ -6,6 +6,7 @@
 body {
   margin: 0;
   padding: 12px;
+  overflow-x: hidden;
 }
 
 body.hide-scroll::-webkit-scrollbar {
@@ -871,11 +872,6 @@ header nav .toggle span:not(:last-of-type) {
   margin-bottom: 6px;
 }
 
-header nav .logo {
-  flex-basis: 40%;
-  padding-left: 50px;
-}
-
 header .navigation-bar.show {
   width: 40%;
 }
@@ -1342,10 +1338,6 @@ footer .newsletter i {
     height: calc(100vh - 10px);
   }
 
-  header nav .logo {
-    padding-left: 0;
-  }
-
   .about-us {
     display: block;
     padding-top: 50px;
@@ -1459,10 +1451,6 @@ footer .newsletter i {
     padding: 0;
   }
 
-  header nav .logo {
-    padding-left: 0;
-  }
-
   header nav .toggle.active {
     left: 36%;
   }
@@ -1481,3 +1469,78 @@ footer .newsletter i {
     padding: 60px 0 60px 20px;
   }
 }
+
+.class-a {
+  color: inherit;
+  text-decoration: none;
+}
+/* Logo kapsayıcı */
+header nav .logo {
+  flex-basis: 40%;
+  max-width: 250px; /* Masaüstünde max genişlik */
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo resmi */
+header nav .logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Navigation Bar */
+header .navigation-bar {
+  flex: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Responsive breakpoint: orta boy ekranlar */
+@media (max-width: 992px) {
+  header nav .logo {
+    max-width: 180px;
+    padding-left: 20px;
+  }
+}
+
+/* Responsive breakpoint: küçük ekranlar */
+@media (max-width: 576px) {
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header nav .logo {
+    max-width: 140px;
+    padding-left: 10px;
+    flex-basis: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  header .navigation-bar {
+    flex-basis: 100%;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+/* 
+header nav .logo {
+  flex-basis: 40%;
+  padding-left: 50px;
+}
+
+  header nav .logo {
+    padding-left: 0;
+  }
+  
+  header nav .logo {
+    padding-left: 0;
+  } */

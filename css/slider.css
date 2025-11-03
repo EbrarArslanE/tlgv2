@@ -1,0 +1,68 @@
+.slider-container {
+  width: 100%;
+  overflow: hidden; /* Taşmayı engelle */
+  position: relative;
+  padding: 20px 0;
+}
+
+.slider-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.slider-item {
+  flex: 0 0 auto;
+  max-width: 350px;
+  width: 80vw; /* Ekran genişliğinin %80'i */
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.slider-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Slider noktaları (göstergeler) */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.slider-dot.active {
+  background: #1C1C2E;
+}
+
+/* Tablet ve daha küçük ekranlar için */
+@media (max-width: 900px) {
+  .slider-item {
+    width: 60vw; /* Genişlik %60'a düşür */
+    max-width: none;
+  }
+}
+
+/* Mobil için */
+@media (max-width: 600px) {
+  .slider-item {
+    width: 90vw; /* Daha da genişlet, neredeyse tüm ekranı kapla */
+  }
+}

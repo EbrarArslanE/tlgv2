@@ -140,3 +140,65 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+.card-wide {
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: 900px;
+  height: 350px; /* yatay form */
+  margin: 40px auto;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.card-wide:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-wide img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card-wide-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-wide-content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.card-wide-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.card-wide-content button {
+  background-color: #1C1C2E;
+  color: #D9FF3E;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  align-self: flex-start;
+}
+
+.card-wide-content button:hover {
+  background-color: #33334a;
+}

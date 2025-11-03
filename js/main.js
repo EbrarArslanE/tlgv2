@@ -79,21 +79,25 @@ svgUp.addEventListener("click", () => {
 });
 
 window.onscroll = function() {
-    // make navbar fixed & change logo color
     if (window.pageYOffset > headerSection.offsetHeight - 75) {
         nav.classList.add("active");
         logoImage.src = "/assets/images/logo-dark.png";
+        logoImage.style.width = "120px";
+        logoImage.style.transition = "all 0.3s ease-in-out";
+        logoImage.style.filter = "drop-shadow(0 0 5px rgba(0,0,0,0.3))";  // Hafif gölge ile derinlik
     } else {
         nav.classList.remove("active");
         logoImage.src = "/assets/images/logo-dark.png";
-        logoImage.style.width = "120px";
+        logoImage.style.width = "140px";  // scroll öncesi biraz daha büyük
+        logoImage.style.filter = "none";
+        logoImage.style.transition = "all 0.3s ease-in-out";
     }
-
 
     // header welcome fade out and in
     if (window.pageYOffset > 0) {
         headerText.style.opacity = -window.pageYOffset / 300 + 1;
     }
+
     // home page JS
     if (pageTitle.text === "ROSA- Restaurant") {
         //change dots background color
@@ -140,7 +144,7 @@ window.onscroll = function() {
 };
 
 // home page JS
-if (pageTitle.text === "ROSA- Restaurant") {
+if (pageTitle.text === "TLG Bilgisayar - Teknolojiyi şekillendiren güç") {
     // svg-down smooth scroll
     svgDown.addEventListener("click", () => {
         window.scroll({
