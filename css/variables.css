@@ -183,6 +183,14 @@
 .text-left   { text-align: left; }
 .text-right  { text-align: right; }
 
+/* Text decoration */
+.text-underline { text-decoration: underline; }
+.text-overline { text-decoration: overline; }
+.text-dashed { text-decoration: dashed ; }
+.text-dotted { text-decoration: dotted ; }
+.text-wavy { text-decoration: wavy ; }
+
+
 /* Margin */
 .m-0  { margin: 0px; }
 .m-10  { margin: 10px; }

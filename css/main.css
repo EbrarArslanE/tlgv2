@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  padding: 12px;
+  /* padding: 12px; */
 }
 
 body.hide-scroll::-webkit-scrollbar {
@@ -1110,7 +1110,7 @@ header .arrow-down {
 
 .menu .text {
   flex: 55%;
-  padding: 40px 0 0 62px;
+  /* padding: 40px 0 0 62px; */
 }
 
 .menu .text h3 {
@@ -1142,7 +1142,10 @@ footer .text {
   max-width: 500px;
   margin: auto;
 }
-
+.span {
+  font-family: Cabin, sans-serif;
+  font-size: 14px;
+}
 footer .text h2 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 19px;
