@@ -1033,6 +1033,12 @@ header .arrow-down {
   background-size: cover;
 }
 
+.recipes .image-2 {
+  height: 500px;
+  background: url("/assets/images/header.jpg") fixed center;
+  background-size: cover;
+}
+
 .menu {
   padding: 60px;
   display: flex;
@@ -1131,6 +1137,15 @@ header .arrow-down {
   background-size: cover;
   height: 400px;
 }
+.fixed-image {
+  background: url("/assets/images/banner2.jpg") fixed center;
+  /* background: url("/assets/images/unnamed.jpg") fixed center; */
+  /* background-image: url("/assets/images/logo-white.png") fixed center; */
+  /* background: #222831; */
+  /* background: radial-gradient(circle,rgba(34, 40, 49, 1) 0%, rgba(57, 62, 70, 1) 50%, rgba(57, 62, 70, 1) 100%); */
+  background-size: cover;
+  height: 400px;
+}
 
 footer {
   /* background-color: #121212; */
@@ -1144,7 +1159,8 @@ footer .text {
 }
 .span {
   font-family: Cabin, sans-serif;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: clamp(14px, 2.5vw, 18px);
 }
 footer .text h2 {
   font-family: 'Source Sans Pro', sans-serif;

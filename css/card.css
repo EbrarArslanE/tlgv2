@@ -202,3 +202,28 @@
 .card-wide-content button:hover {
   background-color: #33334a;
 }
+.info{
+  font-size: 1rem;
+  /* color: #bec4cf; */
+  color: #33334a;
+  background: linear-gradient(135deg, #f8f9fc 0%, #e1e7ff 43%, #f8f9fc 100%);
+
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+}
+
+/* .metalic-card{
+  background: linear-gradient(135deg, #b0b0b0 0%, #7f7f7f 43%, #b0b0b0 100%);
+  box-shadow: 0 4px 15px rgba(176, 176, 176, 0.4);
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  color: #333;
+} */
+
+.metalic-card{
+  background: linear-gradient(135deg, #fffffff5, #3a4b8a, #ffffff98);
+  padding: 1px;
+  border-radius: 1.2rem;
+  box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
+  max-width: 550px;
+}

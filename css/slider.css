@@ -1,69 +1,69 @@
-.slider-container {
+.slide {
   width: 100%;
-  overflow: hidden; /* Taşmayı engelle */
-  position: relative;
-  padding: 20px 0;
-}
-
-.slider-track {
-  display: flex;
-  gap: 20px;
-  transition: transform 0.5s ease-in-out;
-  will-change: transform;
-}
-
-.slider-item {
-  flex: 0 0 auto;
-  max-width: 350px;
-  width: 80vw; /* Ekran genişliğinin %80'i */
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  padding: 25px;
+  height: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
   text-align: center;
-  font-family: 'Inter', sans-serif;
-  user-select: none;
-  box-sizing: border-box;
 }
 
-.slider-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+.slide p {
+  font-size: 14px;
+  color: #33334a;
 }
 
-/* Slider noktaları (göstergeler) */
-.slider-dots {
+.slider {
+  width: 100%;
+  height: var(--height);
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+}
+.slider .list {
   display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 15px;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+.slider .list .item {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 30s linear infinite; /* 20s → 30s */
+  transition: filter 0.5s;
+  animation-delay: calc(
+    (30s / var(--quantity)) * (var(--position) - 1) - 12.5s
+  ) !important;
 }
 
-.slider-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #ccc;
-  cursor: pointer;
-  transition: background 0.3s ease;
+.slider .list .item img {
+  width: 100%;
 }
-
-.slider-dot.active {
-  background: #1C1C2E;
-}
-
-
-/* Tablet ve daha küçük ekranlar için */
-@media (max-width: 900px) {
-  .slider-item {
-    width: 60vw; /* Genişlik %60'a düşür */
-    max-width: none;
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
   }
 }
-
-/* Mobil için */
-@media (max-width: 600px) {
-  .slider-item {
-    width: 90vw; /* Daha da genişlet, neredeyse tüm ekranı kapla */
+.slider:hover .item {
+  animation-play-state: paused !important;
+  filter: grayscale(1);
+}
+.slider .item:hover {
+  filter: grayscale(0);
+}
+.slider[reverse="true"] .item {
+  animation: reversePlay 10s linear infinite;
+}
+@keyframes reversePlay {
+  from {
+    left: calc(var(--width) * -1);
+  }
+  to {
+    left: 100%;
   }
 }
