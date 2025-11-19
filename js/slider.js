@@ -1,32 +1,37 @@
-(function initSlider() {
-  const track = document.querySelector('.slider-track');
-  const items = document.querySelectorAll('.slider-item');
-  const dotsContainer = document.querySelector('.slider-dots');
-  let index = 0;
+window.onload = referansListele;
 
-  if (!track || items.length === 0 || !dotsContainer) return; // Güvenlik
-
-  // Noktaları oluştur
-  items.forEach((_, i) => {
-    const dot = document.createElement('div');
-    dot.classList.add('slider-dot');
-    if (i === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => goToSlide(i));
-    dotsContainer.appendChild(dot);
-  });
-
-  const dots = document.querySelectorAll('.slider-dot');
-
-  function goToSlide(i) {
-    index = i;
-    track.style.transform = `translateX(-${index * 370}px)`;
-    dots.forEach(d => d.classList.remove('active'));
-    dots[index].classList.add('active');
+async function referansListele() {
+  const slideContainer = document.getElementById("referans-slide");
+  if (!slideContainer) {
+    console.error("referans-slide id'li element bulunamadı!");
+    return;
   }
 
-  setInterval(() => {
-    index++;
-    if (index >= items.length) index = 0;
-    goToSlide(index);
-  }, 3500);
-})();
+  try {
+    const response = await fetch("/js/referanslar.json");
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+    const referanslar = await response.json();
+
+    if (!Array.isArray(referanslar)) {
+      throw new TypeError("Referanslar JSON'u array değil!");
+    }
+
+    slideContainer.innerHTML = "";
+
+    referanslar.forEach((item, index) => {
+      const pos = index + 1;
+      slideContainer.innerHTML += `
+        <div class="item" style="--position: ${pos}">
+          <div class="slide">
+            <img src="${item.e_sirket_logo_url}" alt="${item.e_sirket_adi} logosu" style="max-height:50px; margin-bottom:8px;" />
+            <p><strong>${item.e_sirket_adi}</strong></p>
+            <p>${item.e_sirket_sahibi}</p>
+          </div>
+        </div>
+      `;
+    });
+  } catch (error) {
+    console.error("Referanslar yüklenirken hata:", error);
+  }
+}
