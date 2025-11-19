@@ -19,8 +19,15 @@ async function referansListele() {
       slideContainer.innerHTML += `
         <div class="item" style="--position: ${pos}">
           <div class="slide">
-            <p>${item.e_sirket_adi}</p>
-            <p>${item.e_sirket_sahibi}</p>
+            <div class="d-flex flex-row w-100 h-100">
+              <div class="w-50 h-100">
+                <img src="${item.e_sirket_logo_url}" alt="${item.e_sirket_adi} logosu" style="margin-bottom:8px;" />
+              </div>
+              <div class="w-50 d-flex flex-col justify-start items-start">
+                <p><strong>${item.e_sirket_adi}</strong></p>
+                <p>${item.e_referans_aciklamasi}</p>
+              </div>
+            </div>
           </div>
         </div>
       `;
