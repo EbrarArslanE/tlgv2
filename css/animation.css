@@ -18,33 +18,41 @@
     bottom: 0;
     top: 0;
     margin: auto;
-    
-    /* Yazıyı yatay ve dikey ortala */
+
+    /* Yazıyı ortala */
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    text-align: center; /* Yine de garanti */
-    font-family: 'Poppins', 'Inter', 'Roboto', sans-serif; /* Modern fontlar */
+
+    text-align: center;
+    font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
 }
 
+/* Daha modern, neonumsu bir gradient */
 .waveWrapperInner {
     position: absolute;
     width: 100%;
     overflow: hidden;
     height: 100%;
     bottom: -1px;
-    background-image: linear-gradient(to top, #1E90FF 20%, #4682B4 80%);
+
+    /* Yeni degrade (mor-mavi karışımı) */
+    background-image: linear-gradient(
+        to top,
+        #6a5acd 10%,
+        #7366ff 35%,
+        #1e90ff 80%
+    );
 }
 
 .bgTop {
     z-index: 15;
-    opacity: 0.5;
+    opacity: 0.45;
 }
 
 .bgMiddle {
     z-index: 10;
-    opacity: 0.75;
+    opacity: 0.7;
 }
 
 .bgBottom {
@@ -61,19 +69,21 @@
     transform-origin: center bottom;
 }
 
+/* Dalga boyutlarını biraz modernleştirdim */
 .waveTop {
-    background-size: 50% 100px;
+    background-size: 50% 115px;
+    /* neon dalga rengi */
+    background-image: url("data:image/svg+xml,%3Csvg width='1200' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 50 C 150 110 350 -10 600 40 C 850 90 1050 10 1200 60 L1200 120 L0 120 Z' fill='%23a58cff'/%3E%3C/svg%3E");
 }
 
 .waveAnimation .waveTop {
     animation: move_wave 3s linear infinite;
-    -webkit-animation: move_wave 3s linear infinite;
-    -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
 
 .waveMiddle {
-    background-size: 50% 120px;
+    background-size: 50% 130px;
+    background-image: url("data:image/svg+xml,%3Csvg width='1200' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 60 C 200 10 400 110 650 50 C 900 -5 1100 80 1200 30 L1200 120 L0 120 Z' fill='%237d6eff'/%3E%3C/svg%3E");
 }
 
 .waveAnimation .waveMiddle {
@@ -81,33 +91,34 @@
 }
 
 .waveBottom {
-    background-size: 50% 100px;
+    background-size: 50% 110px;
+    background-image: url("data:image/svg+xml,%3Csvg width='1200' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 70 C 180 130 420 -10 700 80 C 980 170 1150 0 1200 60 L1200 120 L0 120 Z' fill='%234f5eff'/%3E%3C/svg%3E");
 }
 
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
 }
 
-/* Yazının stil ve konumu */
-
+/* Yazı efekti — hafif neon glow */
 .waveWrapper span {
     position: relative;
-    z-index: 20; /* Dalgaların üstünde olsun */
-    color: white;
-    font-size: 2.5rem;
+    z-index: 20;
+    color: #ffffff;
+    font-size: 2.6rem;
     font-weight: 700;
-    pointer-events: none; /* Dalgalarla etkileşime girmesin */
+    pointer-events: none;
     user-select: none;
     padding: 0 20px;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.5); /* Yazıya derinlik */
-    display: block;
-}
 
-/* Responsive küçük ekranlar için */
+    text-shadow:
+        0 0 10px rgba(120, 150, 255, 0.9),
+        0 0 25px rgba(90, 120, 255, 0.7),
+        0 2px 6px rgba(0,0,0,0.4);
+}
 
 @media (max-width: 600px) {
     .waveWrapper span {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         padding: 0 10px;
     }
 }
