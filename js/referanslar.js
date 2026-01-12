@@ -21,7 +21,6 @@ async function referansListele() {
               </div>
               <div style="width:60%;">
                 <p><strong>${item.e_sirket_adi}</strong></p>
-                <p>${item.e_referans_aciklamasi}</p>
               </div>
             </div>
           </div>

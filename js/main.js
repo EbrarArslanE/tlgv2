@@ -81,14 +81,16 @@ svgUp.addEventListener("click", () => {
 window.onscroll = function() {
     if (window.pageYOffset > headerSection.offsetHeight - 75) {
         nav.classList.add("active");
-        logoImage.src = "/assets/images/logo-dark.png";
+        logoImage.src = "/assets/images/tlg_bilgisayar_logo.jpeg";
         logoImage.style.width = "120px";
+        logoImage.style.marginTop = "12px";
         logoImage.style.transition = "all 0.3s ease-in-out";
         logoImage.style.filter = "drop-shadow(0 0 5px rgba(0,0,0,0.3))";  // Hafif gölge ile derinlik
     } else {
         nav.classList.remove("active");
-        logoImage.src = "/assets/images/logo-dark.png";
+        logoImage.src = "/assets/images/tlg_bilgisayar_logo.jpeg";
         logoImage.style.width = "140px";  // scroll öncesi biraz daha büyük
+        logoImage.style.marginTop = "12px";
         logoImage.style.filter = "none";
         logoImage.style.transition = "all 0.3s ease-in-out";
     }

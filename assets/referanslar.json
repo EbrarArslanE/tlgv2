@@ -1,27 +1,66 @@
 [
   {
-    "e_sirket_adi": "Netline Bilgi Teknolojileri - Ahmet Kaya",
-    "e_referans_aciklamasi": "Firmanın ağ altyapısı ve sunucu yapılandırma süreçlerini başarılı bir şekilde tamamladılar. Sistem performansımız gözle görülür şekilde arttı.",
+    "e_sirket_adi": "Aktif Turizm",
     "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655e15f27b10dfb205db407ab13975.webp"
   },
   {
-    "e_sirket_adi": "Kaya Yazılım & Teknoloji Çözümleri - Ahmet Kaya",
-    "e_referans_aciklamasi": "Şirketimizin Logo ve muhasebe entegrasyon süreçlerinde hızlı ve profesyonel destek sağladılar. Tüm işlemler sorunsuz bir şekilde yürütüldü.",
+    "e_sirket_adi": "Altıparmak",
     "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655e15f27b10dfb205db407ab13975.webp"
   },
   {
-    "e_sirket_adi": "Doğa Teknoloji & Güvenlik Sistemleri - Ahmet Kaya",
-    "e_referans_aciklamasi": "Güvenlik kamerası kurulumu, IP yapılandırması ve kayıt sistemi entegrasyonu konusunda kusursuz hizmet verdiler. Kesintisiz ve güvenilir bir yapı sağladılar.",
+    "e_sirket_adi": "Danilos Pizza",
     "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655e15f27b10dfb205db407ab13975.webp"
   },
   {
-    "e_sirket_adi": "Kaya Usta – Sistem & Teknik Destek - Ahmet Kaya",
-    "e_referans_aciklamasi": "Bilgisayar bakım, arıza tespiti ve sistem güncelleme süreçlerinde hızlı dönüş yaptılar. Tüm ekipmanlarımızı kısa sürede stabilize ettiler.",
+    "e_sirket_adi": "Gördes",
     "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655e15f27b10dfb205db407ab13975.webp"
   },
   {
-    "e_sirket_adi": "Kaya Profesyonel IT Hizmetleri - Ahmet Kaya",
-    "e_referans_aciklamasi": "Sunucu bakımı, veri yedekleme ve ağ güvenliği süreçlerimizi düzenli olarak takip ediyorlar. Kesintisiz hizmet veriyorlar.",
+    "e_sirket_adi": "Erden Turizm",
     "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655f27b10dfb205db407ab13975.webp"
-  }
+  },
+  {
+    "e_sirket_adi": "TMS Tekstil",
+    "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655f27b10dfb205db407ab13975.webp"
+  },
+  {
+    "e_sirket_adi": "CeoDerm",
+    "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655f27b10dfb205db407ab13975.webp"
+  },
+  {
+    "e_sirket_adi": "Lamedor",
+    "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655f27b10dfb205db407ab13975.webp"
+  },
+  {
+    "e_sirket_adi": "Ersusan",
+    "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655f27b10dfb205db407ab13975.webp"
+  },
+  {
+    "e_sirket_adi": "Aypaş - Galaxy",
+    "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655f27b10dfb205db407ab13975.webp"
+  },
+  {
+    "e_sirket_adi": "Efe Tekstil",
+    "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655f27b10dfb205db407ab13975.webp"
+  },
+  {
+    "e_sirket_adi": "Linear",
+    "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655f27b10dfb205db407ab13975.webp"
+  },
+  {
+    "e_sirket_adi": "Ali Baba",
+    "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655f27b10dfb205db407ab13975.webp"
+  },
+  {
+    "e_sirket_adi": "Mosso",
+    "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655f27b10dfb205db407ab13975.webp"
+  },
+  {
+    "e_sirket_adi": "Rema İşitme",
+    "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655f27b10dfb205db407ab13975.webp"
+  },
+  {
+    "e_sirket_adi": "Dantel Evi",
+    "e_sirket_logo_url": "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655f27b10dfb205db407ab13975.webp"
+  },
 ]
