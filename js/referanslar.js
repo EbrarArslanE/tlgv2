@@ -14,12 +14,12 @@ async function referansListele() {
     referanslar.forEach((item, index) => {
       slideContainer.innerHTML += `
         <div class="item" style="--position:${index}">
-          <div class="slide">
-            <div style="display:flex; gap:10px;">
-              <div style="width:40%;">
+          <div class="loader">
+            <div class="wrapper">
+              <div style="width:100%; height:50%; display:flex; align-items:center; justify-content:center;">
                 <img src="${item.e_sirket_logo_url}" alt="">
               </div>
-              <div style="width:60%;">
+              <div style="width:100%; height:50%; display:flex; align-items:center; justify-content:center; font-size:18px;">
                 <p><strong>${item.e_sirket_adi}</strong></p>
               </div>
             </div>
