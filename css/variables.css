@@ -253,3 +253,10 @@
 .bg-aqua      { background-color: aqua; }
 .bg-beige     { background-color: beige; }
 
+.kart-baslik {
+    text-align: center;      /* Ortala */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;   /* Maksimum 2 satır */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

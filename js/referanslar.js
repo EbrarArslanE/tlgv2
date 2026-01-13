@@ -20,7 +20,7 @@ async function referansListele() {
                 <img src="${item.e_sirket_logo_url}" alt="">
               </div>
               <div style="width:100%; height:50%; display:flex; align-items:center; justify-content:center; font-size:18px;">
-                <p><strong>${item.e_sirket_adi}</strong></p>
+                <p class="kart-baslik"><strong>${item.e_sirket_adi}</strong></p>
               </div>
             </div>
           </div>
