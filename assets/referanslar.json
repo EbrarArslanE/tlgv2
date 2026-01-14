@@ -13,7 +13,7 @@
   },
   {
     "e_sirket_adi": "Gördes",
-    "e_sirket_logo_url": ""
+    "e_sirket_logo_url": "https://www.gordes.com.tr/images/logo_white.png"
   },
   {
     "e_sirket_adi": "Erden Turizm",
@@ -24,8 +24,8 @@
     "e_sirket_logo_url": "https://tmstextile.com/upload/logo/tms-textile-logo.png"
   },
   {
-    "e_sirket_adi": "CeoDerm",
-    "e_sirket_logo_url": ""
+    "e_sirket_adi": "Ceotherm",
+    "e_sirket_logo_url": "https://ceotherm.com/wp-content/uploads/2024/05/logo.png"
   },
   {
     "e_sirket_adi": "La'medore",
@@ -40,16 +40,8 @@
     "e_sirket_logo_url": "https://www.kayakirtasiye.com.tr/skins/shared/images/brand/Aypa%C5%9F%20Logo.jpg"
   },
   {
-    "e_sirket_adi": "Efe Tekstil",
-    "e_sirket_logo_url": ""
-  },
-  {
     "e_sirket_adi": "Lineer Otomasyon Hizmetleri",
     "e_sirket_logo_url": "http://www.lineerotomatikkapi.com/img/logo.png"
-  },
-  {
-    "e_sirket_adi": "Ali Baba",
-    "e_sirket_logo_url": ""
   },
   {
     "e_sirket_adi": "Rema İşitme",
@@ -58,5 +50,13 @@
   {
     "e_sirket_adi": "Dantel Evi",
     "e_sirket_logo_url": "https://static.ticimax.cloud/37963/Uploads/HeaderTasarim/Header1/50120287-6c3e-4050-b47c-510dd50ad092.jpg"
+  },
+  {
+   "e_sirket_adi": "Work Time Group İnsan Kaynakları",
+   "e_sirket_logo_url": "https://www.worktimegroup.com/wp-content/uploads/2023/11/logo-2-100.png"
+  },
+  {
+   "e_sirket_adi": "İntegral Partners",
+   "e_sirket_logo_url": "https://www.integralinfo.com.tr/wp-content/uploads/2025/11/integral-logo.jpg"
   }
 ]
