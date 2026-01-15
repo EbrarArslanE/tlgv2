@@ -1,33 +1,60 @@
-window.onload = referansListele;
+  const slidesWrapper = document.getElementById('slidesWrapper');
 
-async function referansListele() {
-  const slideContainer = document.getElementById("referans-slide");
-  if (!slideContainer) return;
-
-  try {
-    const response = await fetch("assets/referanslar.json");
-    const dataText = await response.text();
-    const referanslar = eval(dataText); // mevcut yapın
-
-    slideContainer.innerHTML = "";
-
-    referanslar.forEach((item, index) => {
-      slideContainer.innerHTML += `
-        <div class="item" style="--position:${index}">
-          <div class="loader">
-            <div class="wrapper">
-              <div style="width:100%; height:50%; display:flex; align-items:center; justify-content:center;">
-                <img src="${item.e_sirket_logo_url}" alt="">
-              </div>
-              <div style="width:100%; height:50%; display:flex; align-items:center; justify-content:center; font-size:18px;">
-                <p class="kart-baslik"><strong>${item.e_sirket_adi}</strong></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
-    });
-  } catch (err) {
-    console.error(err);
+  async function fetchReferanslar() {
+    try {
+      const res = await fetch("assets/referanslar.json");
+      const data = await res.json();
+      return data;
+    } catch(e) {
+      console.error("Referanslar yüklenirken hata:", e);
+      return [];
+    }
   }
-}
+
+  function createSlide({ e_sirket_logo_url, e_sirket_adi }) {
+    const slide = document.createElement('div');
+    slide.classList.add('slide');
+
+    const img = document.createElement('img');
+    img.src = e_sirket_logo_url;
+    img.alt = e_sirket_adi;
+
+    const name = document.createElement('div');
+    name.classList.add('company-name');
+    name.textContent = e_sirket_adi;
+
+    slide.appendChild(img);
+    slide.appendChild(name);
+
+    return slide;
+  }
+
+  (async () => {
+    const referanslar = await fetchReferanslar();
+    if(!referanslar.length) {
+      slidesWrapper.textContent = "Referans bulunamadı";
+      return;
+    }
+
+    // Referansları 2 kere ekleyerek sonsuzluk oluşturuyoruz
+    [...referanslar, ...referanslar].forEach(item => {
+      const slide = createSlide(item);
+      slidesWrapper.appendChild(slide);
+    });
+
+    let pos = 0;
+    const slideWidth = 320;
+    const totalWidth = slideWidth * referanslar.length;
+    const speed = 0.5; // hız (px/frame), ihtiyaca göre arttırabilirsin
+
+    function animate() {
+      pos += speed;
+      if (pos >= totalWidth) {
+        pos = 0;
+      }
+      slidesWrapper.style.transform = `translateX(${-pos}px)`;
+      requestAnimationFrame(animate);
+    }
+    animate();
+
+  })();

@@ -1,142 +1,39 @@
-/* GENEL TAŞMA ENGELLEYİCİ */
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-/* SLIDER */
-.slider {
-  position: relative;
-  width: 100%;
-  height: var(--height);
-  overflow: hidden;
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    #000 10% 90%,
-    transparent
-  );
-}
-
-/* LIST */
-.slider .list {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-/* ITEM – MOTOR BOZULMADAN */
-.slider .list .item {
-  position: absolute;
-  width: var(--width);
-  height: var(--height);
-  top: 0;
-  left: 100%;
-  animation: autoRun 30s linear infinite;
-  transition: filter 0.5s;
-
-  animation-delay: calc(
-    (30s / var(--quantity)) * var(--position) - 12.5s
-  );
-}
-
-/* SLIDE CARD */
-.slide {
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,.1);
-  box-sizing: border-box;
-}
-
-.slide p {
-  font-size: 14px;
-  color: #33334a;
-}
-
-/* IMAGE */
-.slider .item img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;   /* logo bozulmaz */
-  transform: scale(1.15); /* %15 büyüt */
-}
-
-/* ANIMATION */
-@keyframes autoRun {
-  from { left: 100%; }
-  to   { left: calc(var(--width) * -1); }
-}
-
-/* HOVER */
-.slider:hover .item {
-  animation-play-state: paused;
-  filter: grayscale(1);
-}
-.slider .item:hover {
-  filter: grayscale(0);
-}
-
-/* From Uiverse.io by Nawsome */ 
-.loader {
-  position: relative;
-  width: 240px;
-  height: 130px;
-  margin-bottom: 10px;
-  border: 1px solid #d3d3d3;
-  background-color: white;
-  border-radius: 6px;
-  overflow: hidden;
-  padding: 0; /* padding wrapper içine taşındı */
-  box-sizing: border-box;
-}
-
-.loader .wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 15px;
-  box-sizing: border-box;
-}
-
-/* PARLAMA EFECTI */
-.loader:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -150%; /* başta soldan başlasın */
-  width: 150%; /* kutuyu tamamen kapsasın */
-  height: 150%;
-  background: linear-gradient(
-    110deg,
-    rgba(227,227,227,0) 0%,
-    rgba(227,227,227,0) 40%,
-    rgba(227,227,227,0.5) 50%,
-    rgba(227,227,227,0) 60%,
-    rgba(227,227,227,0) 100%
-  );
-  animation: gradient-animation_2 1.2s linear infinite;
-  pointer-events: none; /* hover olayını bozmasın */
-  z-index: 2;
-}
-
-
-
-
-@keyframes gradient-animation_2 {
-  0% {
-    transform: translateX(-100%);
+  .slider {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    height: 200px;
+    background: white;
+    border-radius: 12px;
+    /* box-shadow: 0 8px 20px rgba(0,0,0,0.1); */
+    overflow: hidden;
   }
-
-  100% {
-    transform: translateX(100%);
+  .slides-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
   }
-}
+  .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .slide img {
+    max-width: 140px;
+    max-height: 80px;
+    object-fit: contain;
+    filter: grayscale(30%);
+    transition: filter 0.3s ease;
+  }
+  .slide img:hover {
+    filter: grayscale(0);
+  }
+  .company-name {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;
+  }
