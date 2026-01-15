@@ -1,11 +1,23 @@
 [
   {
+    "e_sirket_adi": "Aypaş Elektronik - Galaxy Duvar Saatleri",
+    "e_sirket_logo_url": "https://www.kayakirtasiye.com.tr/skins/shared/images/brand/Aypa%C5%9F%20Logo.jpg"
+  },
+  {
     "e_sirket_adi": "Aktif Turizm",
     "e_sirket_logo_url": "https://active.com.tr/wp-content/uploads/2024/01/logo.png"
   },
   {
     "e_sirket_adi": "Altıparmak",
     "e_sirket_logo_url": "https://altiparmakkimya.com/assets/2021/12/altiparmak-kimya-logo-v1@2x.png"
+  },
+  {
+   "e_sirket_adi": "Work Time Group İnsan Kaynakları",
+   "e_sirket_logo_url": "https://www.worktimegroup.com/wp-content/uploads/2023/11/logo-2-100.png"
+  },
+  {
+   "e_sirket_adi": "İntegral Partners",
+   "e_sirket_logo_url": "https://www.integralinfo.com.tr/wp-content/uploads/2025/11/integral-logo.jpg"
   },
   {
     "e_sirket_adi": "Danilos Pizza",
@@ -16,8 +28,8 @@
     "e_sirket_logo_url": "https://www.gordes.com.tr/images/logo_white.png"
   },
   {
-    "e_sirket_adi": "Erden Turizm",
-    "e_sirket_logo_url": "https://www.erdenturizm.com.tr/site_document/files/resim/apng_26780.png"
+    "e_sirket_adi": "Atalante Tur",
+    "e_sirket_logo_url": "https://static.wixstatic.com/media/4c451b_4b102b1611dd4f9cb85adbfdb2502fb5~mv2.png/v1/fill/w_205,h_124,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4c451b_4b102b1611dd4f9cb85adbfdb2502fb5~mv2.png"
   },
   {
     "e_sirket_adi": "TMS Tekstil",
@@ -34,10 +46,6 @@
   {
     "e_sirket_adi": "Ersusan",
     "e_sirket_logo_url": "https://ersusan.com.tr/public/storage/settings/December2022/rjvoF6FcTzJoW9vwR3eX.png"
-  },
-  {
-    "e_sirket_adi": "Aypaş Elektronik - Galaxy Duvar Saatleri",
-    "e_sirket_logo_url": "https://www.kayakirtasiye.com.tr/skins/shared/images/brand/Aypa%C5%9F%20Logo.jpg"
   },
   {
     "e_sirket_adi": "Lineer Otomasyon Hizmetleri",

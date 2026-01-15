@@ -25,20 +25,7 @@
 
 <body class="stop-scroll">
 
-  <div class="loader-wrap">
-    <div class="loader">
-      <span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span
-        class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span
-        class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span
-        class="loader-item"></span>
-    </div>
-  </div>
 
-  <div class="dots">
-    <div class="active one" data-x="header"></div>
-    <div class="two" data-x=".recipes"></div>
-    <div class="three" data-x=".fixed-image"></div>
-  </div>
 
   <header>
     <nav>
@@ -60,11 +47,18 @@
         </ul>
       </div>
     </nav>
+
     <div class="waveWrapper">
-      <video autoplay loop muted>
-        <source src="/assets/images/background.mp4"style= "width:100%; height: 100%; object-fit: cover; type="video/mp4">
-        Tarayıcınız video etiketini desteklemiyor.
-    </video>
+      <div class="video-wrapper">
+        <video autoplay loop muted playsinline>
+          <source src="/assets/images/background-2.mp4" type="video/mp4">
+        </video>
+      
+        <div class="video-text">
+          <span class="title">TLG Bilgisayar</span>
+          <span class="subtitle">Teknolojiyi Şekillendiren Güç</span>
+        </div>
+      </div>
     </div>
   </header>
 
