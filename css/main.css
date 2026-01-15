@@ -812,13 +812,23 @@ hr {
 
 header {
   height: calc(100vh - 22px);
-  background-image: url("/assets/images/header.jpg");
+  background-image: url("/assets/images/background-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   padding: 20px 70px;
 }
+
+
+/* MOBİL FIX */
+@media (max-width: 768px) {
+  header,
+  .video-wrapper {
+    min-height: 100svh;
+  }
+}
+
 
 header nav {
   position: fixed;
@@ -1611,7 +1621,7 @@ header nav .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   text-align: center;
   color: #fff;
 }
@@ -1619,9 +1629,11 @@ header nav .logo {
 .video-text .title {
   font-size: 3rem;
   font-weight: 700;
+  margin-left: 22px;
 }
 
 .video-text .subtitle {
+  margin-left: 25px;
   margin-top: 10px;
   font-size: 1.3rem;
   opacity: 0.9;
