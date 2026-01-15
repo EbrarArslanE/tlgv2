@@ -1,0 +1,261 @@
+/* 🌌 GLOBAL RESET + BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #1e1e2f;
+  background: linear-gradient(135deg, #f6f9fc 0%, #eef2f6 100%);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* 🎨 COLOR PALETTE */
+.palette-1 { background-color: #0f2027; }
+.palette-2 { background-color: #203a43; }
+.palette-3 { background-color: #2c5364; }
+.palette-4 { background-color: #ffffff; }
+.palette-radiant { background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); }
+
+/* ⚓ HEADER BAR */
+.header-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 56px;
+  background: linear-gradient(135deg, #1b3c53 0%, #234c6a 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-bar span {
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 8px;
+  letter-spacing: 0.3px;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.header-bar span:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+/* 🧭 MAIN LAYOUT */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 72px;
+  padding-left: 32px;
+  padding-right: 32px;
+  gap: 28px;
+  height: calc(100vh - 72px);
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* 🧱 SIDEBAR */
+.sidebar {
+  flex: 0 0 280px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  color: #333;
+}
+
+.sidebar:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* 💡 MAIN CONTENT */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 🧩 CARDS */
+.content-box {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.04),
+    0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.content-box:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.12),
+    0 12px 36px rgba(0, 0, 0, 0.08);
+}
+
+/* ✨ HEADLINE STRIP */
+.headline {
+  border-radius: 10px;
+  margin-bottom: 14px;
+  background: linear-gradient(135deg, #56ccf2 0%, #2f80ed 100%);
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* 📘 DESCRIPTION BLOCKS */
+.description {
+  background: #f0f4fa;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 15px;
+  color: #444;
+  overflow-y: auto;
+  max-height: 200px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+/* 🧮 GRID STRUCTURE */
+.top-row, .middle-row, .bottom-row {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+/* 🎛️ SECONDARY / TERTIARY SECTIONS */
+.secondary-section, .tertiary-section, .last-section {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  margin-top: 24px;
+  backdrop-filter: blur(10px);
+}
+
+/* 🪄 SMALL CARDS */
+.small-cards-row > div {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.small-cards-row > div:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* 🏢 COMPANY HEADER */
+.company-header {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 32px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  margin: 0 auto 32px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.company-logo {
+  height: 52px;
+  width: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.company-name {
+  font-weight: 800;
+  font-size: 26px;
+  color: #2f80ed;
+  letter-spacing: 0.5px;
+}
+
+/* ⚡ HR DIVIDER */
+hr {
+  width: 80%;
+  height: 2px;
+  margin: 72px auto;
+  border: none;
+  background: linear-gradient(90deg, transparent, #2f80ed, transparent);
+  opacity: 0.6;
+  border-radius: 2px;
+}
+
+/* ⚙️ FOOTER */
+.footer {
+  padding: 32px;
+  background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+  color: #555;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.footer-box {
+  background: none;
+  box-shadow: none;
+  color: #444;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* 📱 RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .main-container {
+    flex-direction: column;
+    padding: 16px;
+    height: auto;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-bar {
+    font-size: 14px;
+    padding: 0 16px;
+    height: 52px;
+  }
+
+  .company-name {
+    font-size: 22px;
+  }
+
+  .content-box {
+    padding: 14px;
+  }
+
+  .headline {
+    height: 36px;
+    font-size: 15px;
+  }
+}

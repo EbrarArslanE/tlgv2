@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature's Harmony</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <style>
+      body {
+        background-color: #f5fff6;
+      }
+      main.container {
+        padding: 2rem 0;
+      }
+      h2,
+      h3 {
+        color: #2f5d3b;
+      }
+      figure img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+      }
+      figcaption a {
+        color: #2f5d3b;
+      }
+      footer {
+        margin-top: 2rem;
+        text-align: center;
+      }
+      section[aria-label="Subscribe example"] {
+        background: #eaf7ec;
+        padding: 2rem 0;
+        border-top: 1px solid #cce3d1;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>Nature's Harmony</strong></li>
+      </ul>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#" role="button">Explore</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <div class="grid">
+        <section>
+          <hgroup>
+            <h2>Discover the Beauty of Nature</h2>
+            <h3>Reconnect with the world around you</h3>
+          </hgroup>
+          <p>
+            Nature offers tranquility, inspiration, and balance. From lush green
+            forests to the deep blue ocean, every landscape tells a story of
+            harmony and resilience.
+          </p>
+
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80"
+              alt="Serene forest with sunlight filtering through trees"
+            />
+            <figcaption>
+              <a
+                href="https://unsplash.com/photos/serene-forest"
+                target="_blank"
+                >Photo by Sebastian Unrau</a
+              >
+            </figcaption>
+          </figure>
+
+          <h3>Forests: The Lungs of Earth</h3>
+          <p>
+            Forests are the planet’s life support system. They produce oxygen,
+            store carbon, and house over 80% of terrestrial biodiversity.
+          </p>
+
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+              alt="Ocean waves under sunset light"
+            />
+            <figcaption>
+              <a href="https://unsplash.com/photos/ocean" target="_blank"
+                >Photo by Frank McKenna</a
+              >
+            </figcaption>
+          </figure>
+
+          <h3>Oceans: The Blue Heart</h3>
+          <p>
+            Oceans regulate climate and nurture countless species. Their
+            rhythmic waves remind us of nature’s vastness and continuity.
+          </p>
+
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1500048993959-d6fcb66e977e?auto=format&fit=crop&w=1200&q=80"
+              alt="Snowy mountain peaks under clear sky"
+            />
+            <figcaption>
+              <a href="https://unsplash.com/photos/mountains" target="_blank"
+                >Photo by Denys Nevozhai</a
+              >
+            </figcaption>
+          </figure>
+
+          <h3>Mountains: Guardians of the Sky</h3>
+          <p>
+            Majestic and timeless, mountains inspire awe and humility. They are
+            a reminder of our connection to the earth’s raw power and serenity.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <section aria-label="Subscribe example">
+      <div class="container">
+        <article>
+          <hgroup>
+            <h2>Join the Nature Lovers Community</h2>
+            <h3>Stay updated on stories and conservation tips</h3>
+          </hgroup>
+          <form class="grid">
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="Your first name"
+              aria-label="First name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              aria-label="Email address"
+              required
+            />
+            <button type="submit" onclick="event.preventDefault()">
+              Subscribe
+            </button>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <footer class="container">
+      <small>
+        <a href="#">About</a> •
+        <a href="#">Contact</a>
+      </small>
+    </footer>
+  </body>
+</html>

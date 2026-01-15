@@ -1,0 +1,63 @@
+.text-card {
+  --bg-color: transparent;
+  background-color: var(--bg-color);
+  padding: 1rem 2rem;
+  border-radius: 1.25rem;
+  width: fit-content;
+}
+
+.loader {
+  color: white;
+  /* font-family: "Poppins", sans-serif; */
+  font-weight: 500;
+  font-size: 25px;
+
+  display: flex;
+  align-items: center; /* 🔥 dikey merkez */
+
+  height: 40px;
+  padding: 10px;
+  box-sizing: content-box;
+}
+
+.words {
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+  margin-left: 6px;
+}
+
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    var(--bg-color) 10%,
+    transparent 30%,
+    transparent 70%,
+    var(--bg-color) 90%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+.word {
+  display: block;
+  height: 40px;
+  line-height: 40px; /* 🔥 tam ortalama */
+  color: #956afa;
+  animation: spin_4991 6s infinite;
+}
+
+/* animasyon */
+@keyframes spin_4991 {
+  0%   { transform: translateY(0%); }
+  20%  { transform: translateY(0%); }
+
+  40%  { transform: translateY(-100%); }
+  60%  { transform: translateY(-100%); }
+
+  80%  { transform: translateY(-200%); }
+  100% { transform: translateY(-200%); }
+}
+

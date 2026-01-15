@@ -1,0 +1,425 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+/* Uzunluk (width) */
+.w-auto    { width: auto; }
+.w-3    { width: 3%; }
+.w-5    { width: 5%; }
+
+.w-10   { width: 10%; }
+.w-12   { width: 12%; }
+.w-13   { width: 13%; }
+.w-15   { width: 15%; }
+
+.w-20   { width: 20%; }
+.w-22   { width: 22%; }
+.w-25   { width: 25%; }
+
+.w-30   { width: 30%; }
+.w-32   { width: 32%; }
+.w-35   { width: 35%; }
+
+.w-40   { width: 40%; }
+.w-42   { width: 42%; }
+.w-45   { width: 45%; }
+
+.w-50   { width: 50%; }
+.w-52   { width: 52%; }
+.w-55   { width: 55%; }
+
+.w-60   { width: 60%; }
+.w-62   { width: 62%; }
+.w-65   { width: 65%; }
+.w-68   { width: 68%; }
+
+.w-70   { width: 70%; }
+.w-72   { width: 72%; }
+.w-75   { width: 75%; }
+
+.w-80   { width: 80%; }
+.w-82   { width: 82%; }
+.w-84   { width: 84%; }
+.w-85   { width: 85%; }
+.w-86   { width: 86%; }
+
+.w-90   { width: 90%; }
+.w-92   { width: 92%; }
+.w-95   { width: 95%; }
+.w-100  { width: 100%; }
+
+/* Sabit Width */
+.w-100px { width: 100px; }
+.w-200px { width: 200px; }
+.w-300px { width: 300px; }
+
+/* Yükseklik (percent-based) */
+.h-5    { height: 5%; }
+.h-3    { height: 3%; }
+
+.h-10   { height: 10%; }
+.h-12   { height: 12%; }
+.h-15   { height: 15%; }
+
+.h-20   { height: 20%; }
+.h-22   { height: 22%; }
+.h-25   { height: 25%; }
+
+.h-30   { height: 30%; }
+.h-32   { height: 32%; }
+.h-35   { height: 35%; }
+
+.h-40   { height: 40%; }
+.h-42   { height: 42%; }
+.h-45   { height: 45%; }
+
+.h-50   { height: 50%; }
+.h-52   { height: 52%; }
+.h-55   { height: 55%; }
+
+.h-60   { height: 60%; }
+.h-62   { height: 62%; }
+.h-65   { height: 65%; }
+
+.h-70   { height: 70%; }
+.h-72   { height: 72%; }
+.h-75   { height: 75%; }
+
+.h-80   { height: 80%; }
+.h-82   { height: 82%; }
+.h-85   { height: 85%; }
+
+.h-90   { height: 90%; }
+.h-92   { height: 92%; }
+.h-95   { height: 95%; }
+.h-100  { height: 100%; }
+
+/* Yükseklik (vh / px) */
+.h-100vh { height: 100vh; }
+.h-50vh  { height: 50vh; }
+.h-25vh  { height: 25vh; }
+
+.h-20px { height: 20px; }
+.h-23px { height: 23px; }
+.h-25px { height: 25px; }
+
+.h-30px { height: 30px; }
+.h-33px { height: 33px; }
+.h-35px { height: 35px; }
+
+.h-50px { height: 50px; }
+.h-53px { height: 53px; }
+.h-55px { height: 55px; }
+
+.h-100px { height: 100px; }
+.h-110px { height: 110px; }
+.h-150px { height: 150px; }
+
+.h-200px { height: 200px; }
+.h-230px { height: 230px; }
+.h-250px { height: 250px; }
+
+.h-300px { height: 300px; }
+.h-330px { height: 330px; }
+.h-350px { height: 350px; }
+
+.h-400px { height: 400px; }
+.h-440px { height: 440px; }
+.h-450px { height: 450px; }
+
+.h-500px { height: 500px; }
+.h-520px { height: 520px; }
+.h-550px { height: 550px; }
+
+.h-600px { height: 600px; }
+
+.h-700px { height: 700px; }
+
+.h-800px { height: 800px; }
+
+.h-900px { height: 900px; }
+
+.h-1000px { height: 1000px; }
+
+/* Min / Max yükseklik */
+.min-h-100 { min-height: 100%; }
+.max-h-100 { max-height: 100%; }
+
+/* Flex Ayarları */
+.d-flex       { display: flex; }
+.inline-flex { display: inline-flex; }
+.flex-row   { flex-direction: row; }
+.flex-col   { flex-direction: column; }
+.flex-wrap  { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+
+/* Justify Content */
+.justify-start   { justify-content: flex-start; }
+.justify-center  { justify-content: center; }
+.justify-end     { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-around  { justify-content: space-around; }
+.justify-evenly  { justify-content: space-evenly; }
+
+/* Align Items */
+.items-start    { align-items: flex-start; }
+.items-center   { align-items: center; }
+.items-end      { align-items: flex-end; }
+.items-stretch  { align-items: stretch; }
+.items-baseline { align-items: baseline; }
+
+/* Gap */
+.gap-0  { gap: 0px; }
+.gap-2  { gap: 2px; }
+.gap-4  { gap: 4px; }
+.gap-6  { gap: 6px; }
+.gap-8  { gap: 8px; }
+.gap-12 { gap: 12px; }
+.gap-16 { gap: 16px; }
+.gap-20 { gap: 20px; }
+.gap-22 { gap: 22px; }
+.gap-24 { gap: 24px; }
+.gap-26 { gap: 26px; }
+.gap-32 { gap: 32px; }
+.gap-40 { gap: 40px; }
+
+/* Text Align */
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+
+/* Margin */
+.m-0  { margin: 0px; }
+.m-10  { margin: 10px; }
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+.mt-50 { margin-top: 50px; }
+.mt-60 { margin-top: 60px; }
+.mt-70 { margin-top: 70px; }
+.mt-80 { margin-top: 80px; }
+.mr-10 { margin-right: 10px; }
+.mb-10 { margin-bottom: 10px; }
+.ml-10 { margin-left: 10px; }
+.mx-10 { margin-left: 10px; margin-right: 10px; }
+.my-10 { margin-top: 10px; margin-bottom: 10px; }
+
+.m-20  { margin: 20px; }
+.p-20  { padding: 20px; }
+
+/* Padding */
+.pt-10 { padding-top: 10px; }
+.pr-10 { padding-right: 10px; }
+.pb-10 { padding-bottom: 10px; }
+.pl-10 { padding-left: 10px; }
+.px-10 { padding-left: 10px; padding-right: 10px; }
+.py-10 { padding-top: 10px; padding-bottom: 10px; }
+
+.p-5   { padding: 5px; }
+.p-10  { padding: 10px; }
+.p-11  { padding: 11px; }
+.p-20  { padding: 20px; }
+.p-30  { padding: 30px; }
+.p-40  { padding: 40px; }
+.p-50  { padding: 50px; }
+
+.bg-red       { background-color: red; }
+.bg-blue      { background-color: blue; }
+.bg-gray      { background-color: gray; }
+.bg-black     { background-color: black; }
+.bg-white     { background-color: white; }
+.bg-green     { background-color: green; }
+.bg-yellow    { background-color: yellow; }
+.bg-orange    { background-color: orange; }
+.bg-purple    { background-color: purple; }
+.bg-pink      { background-color: pink; }
+.bg-brown     { background-color: brown; }
+.bg-cyan      { background-color: cyan; }
+.bg-magenta   { background-color: magenta; }
+.bg-lime      { background-color: lime; }
+.bg-teal      { background-color: teal; }
+.bg-navy      { background-color: navy; }
+.bg-maroon    { background-color: maroon; }
+.bg-olive     { background-color: olive; }
+.bg-silver    { background-color: silver; }
+.bg-gold      { background-color: gold; }
+.bg-lightgray { background-color: lightgray; }
+.bg-darkgray  { background-color: darkgray; }
+.bg-indigo    { background-color: indigo; }
+.bg-aqua      { background-color: aqua; }
+.bg-beige     { background-color: beige; }
+
+/* Border Width */
+.border-0 { border: 0; }
+.border-1 { border: 1px solid; }
+.border-2 { border: 2px solid; }
+.border-3 { border: 3px solid; }
+.border-4 { border: 4px solid; }
+.border-5 { border: 5px solid; }
+
+/* Border Style */
+.border-solid { border-style: solid; }
+.border-dashed { border-style: dashed; }
+.border-dotted { border-style: dotted; }
+.border-double { border-style: double; }
+
+/* Border Color */
+.border-black     { border-color: black; }
+.border-white     { border-color: white; }
+.border-gray      { border-color: gray; }
+.border-lightgray { border-color: lightgray; }
+.border-darkgray  { border-color: darkgray; }
+.border-red       { border-color: red; }
+.border-blue      { border-color: blue; }
+.border-green     { border-color: green; }
+.border-yellow    { border-color: yellow; }
+.border-orange    { border-color: orange; }
+.border-purple    { border-color: purple; }
+.border-pink      { border-color: pink; }
+.border-cyan      { border-color: cyan; }
+.border-teal      { border-color: teal; }
+.border-navy      { border-color: navy; }
+.border-gold      { border-color: gold; }
+
+/* Border Side */
+.border-top    { border-top: 1px solid; }
+.border-right  { border-right: 1px solid; }
+.border-bottom { border-bottom: 1px solid; }
+.border-left   { border-left: 1px solid; }
+
+/* Border Radius */
+.radius-0  { border-radius: 0; }
+.radius-2  { border-radius: 2px; }
+.radius-4  { border-radius: 4px; }
+.radius-6  { border-radius: 6px; }
+.radius-8  { border-radius: 8px; }
+.radius-10 { border-radius: 10px; }
+.radius-12 { border-radius: 12px; }
+.radius-16 { border-radius: 16px; }
+.radius-20 { border-radius: 20px; }
+.radius-24 { border-radius: 24px; }
+.radius-30 { border-radius: 30px; }
+
+/* Full / Special */
+.radius-circle { border-radius: 50%; }
+.radius-pill   { border-radius: 9999px; }
+
+/* Radius Sides */
+.radius-t { border-top-left-radius: 8px; border-top-right-radius: 8px; }
+.radius-b { border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
+.radius-l { border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+.radius-r { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+
+/* Radius Corners */
+.radius-tl { border-top-left-radius: 8px; }
+.radius-tr { border-top-right-radius: 8px; }
+.radius-bl { border-bottom-left-radius: 8px; }
+.radius-br { border-bottom-right-radius: 8px; }
+
+.position-fixed { position: fixed; }
+
+.top-0    { top: 0; }
+.bottom-0 { bottom: 0; }
+.left-0   { left: 0; }
+.right-0  { right: 0; }
+
+.z-index { z-index: 99999; }
+
+/* Overflow */
+.overflow-hidden { overflow: hidden; }
+.overflow-auto   { overflow: auto; }
+.overflow-scroll { overflow: scroll; }
+.overflow-visible{ overflow: visible; }
+
+/* Axis Bazlı */
+.overflow-x-hidden { overflow-x: hidden; }
+.overflow-x-auto   { overflow-x: auto; }
+.overflow-x-scroll { overflow-x: scroll; }
+
+.overflow-y-hidden { overflow-y: hidden; }
+.overflow-y-auto   { overflow-y: auto; }
+.overflow-y-scroll { overflow-y: scroll; }
+
+/* Scrollbar Davranışı */
+.scroll-smooth { scroll-behavior: smooth; }
+.scroll-auto   { scroll-behavior: auto; }
+
+/* Max Height ile Scroll */
+.max-h-100vh { max-height: 100vh; }
+.max-h-90vh  { max-height: 90vh; }
+.max-h-80vh  { max-height: 80vh; }
+.max-h-70vh  { max-height: 70vh; }
+.max-h-60vh  { max-height: 60vh; }
+.max-h-50vh  { max-height: 50vh; }
+
+/* Scroll Snap (efsane ama az bilinir) */
+.snap-y        { scroll-snap-type: y mandatory; }
+.snap-x        { scroll-snap-type: x mandatory; }
+.snap-start    { scroll-snap-align: start; }
+.snap-center   { scroll-snap-align: center; }
+.snap-end      { scroll-snap-align: end; }
+
+/* Momentum Scroll (iOS için) */
+.scroll-touch {
+  -webkit-overflow-scrolling: touch;
+}
+
+
+/* Text Color - Basic */
+.text-black     { color: black; }
+.text-white     { color: white; }
+.text-gray      { color: gray; }
+.text-lightgray { color: lightgray; }
+.text-darkgray  { color: darkgray; }
+
+/* Text Color - Primary */
+.text-red     { color: red; }
+.text-blue    { color: blue; }
+.text-green   { color: green; }
+.text-yellow  { color: yellow; }
+.text-orange  { color: orange; }
+.text-purple  { color: purple; }
+.text-pink    { color: pink; }
+.text-cyan    { color: cyan; }
+.text-teal    { color: teal; }
+.text-navy    { color: navy; }
+
+/* Text Color - Fancy */
+.text-gold    { color: gold; }
+.text-silver  { color: silver; }
+.text-maroon  { color: maroon; }
+.text-olive   { color: olive; }
+.text-indigo  { color: indigo; }
+.text-aqua    { color: aqua; }
+.text-magenta { color: magenta; }
+.text-brown   { color: brown; }
+.text-beige   { color: beige; }
+
+/* Opacity Based */
+.text-100 { color: rgba(0,0,0,1); }
+.text-90  { color: rgba(0,0,0,.9); }
+.text-80  { color: rgba(0,0,0,.8); }
+.text-70  { color: rgba(0,0,0,.7); }
+.text-60  { color: rgba(0,0,0,.6); }
+.text-50  { color: rgba(0,0,0,.5); }
+.text-40  { color: rgba(0,0,0,.4); }
+.text-30  { color: rgba(0,0,0,.3); }
+.text-20  { color: rgba(0,0,0,.2); }
+
+.weather-pos{
+  left: 1615px;
+  top: 765px;
+}
+
+
+/* .palette-1 { background-color: #1B3C53; }
+.palette-2 { background-color: #234C6A; }
+.palette-3 { background-color: #456882; }
+.palette-4 { background-color: #E3E3E3; } */
+
+.swal2-popup {
+  font-family: 'Poppins', sans-serif !important;
+}
