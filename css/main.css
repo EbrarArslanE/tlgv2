@@ -1038,7 +1038,7 @@ header .arrow-down {
 
 .recipes .image {
   height: 500px;
-  background: url("/assets/images/banner.png") fixed center;
+  background: url("/assets/images/banner.jpg") fixed center;
   background-size: cover;
 }
 
