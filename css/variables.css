@@ -260,3 +260,62 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+/* === SCROLL ANİMASYONLARI === */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Soldan */
+.reveal-left {
+  transform: translateX(-100px);
+}
+
+/* Sağdan */
+.reveal-right {
+  transform: translateX(100px);
+}
+
+/* Üstten */
+.reveal-top {
+  transform: translateY(-100px);
+}
+
+/* === SHIMMER / PARILDAMA ANİMASYONU === */
+.parildama {
+  position: relative;
+  overflow: hidden;
+}
+
+.parildama::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shimmer 2.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
+}

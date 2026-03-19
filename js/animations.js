@@ -13,3 +13,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+window.addEventListener("scroll", revealOnScroll);
+
+function revealOnScroll() {
+  const elements = document.querySelectorAll(".reveal");
+
+  elements.forEach((el) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+    const visiblePoint = 100;
+
+    if (elementTop < windowHeight - visiblePoint) {
+      el.classList.add("active");
+    }
+  });
+}
